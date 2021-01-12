@@ -4,12 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>H! Chat</title>
-    <link rel="stylesheet" href="/public/style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    
-    <h1>Hello H! Chat</h1>
 
-    <script src="/public/client.js"></script>
+    <section class="chat_section">
+        <div class="brand">
+            <img src="/hi.png" alt="">
+            <h1>H! Chat</h1>
+        </div>
+        <div class="message_area">
+            <div class="incoming message">
+                <h4>Saqib</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, autem.</p>
+            </div>
+            <div class="outgoing message">
+                <h4>Saqib</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, autem.</p>
+            </div>
+        </div>
+        <div>
+            <textarea id="textarea" cols="30" rows="1" placeholder="write a message..."></textarea>
+        </div>
+    </section>
+
+    <script src="/client.js"></script>
 </body>
 </html>
