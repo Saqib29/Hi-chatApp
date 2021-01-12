@@ -18,6 +18,12 @@ app.get('/', (req, res) => {
 // Socket 
 io.on('connection', (socket) => {
     console.log('Connected...');
+
+    // get messages from client sides
+    socket.on('message', (msg) => {
+        // send msg to all who are connected to this socket
+        socket.broadcast.emit('message', msg);
+    });
 });
 
 // server listening...
